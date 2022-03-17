@@ -14,7 +14,7 @@ public class MainController {
     @GetMapping
     public ResponseEntity<String> getMEssage(){
 
-        HttpHeaders headers
+        HttpHeaders headers = new HttpHeaders();
 
         return new ResponseEntity("Success", headers, HttpStatus.OK);
     }
