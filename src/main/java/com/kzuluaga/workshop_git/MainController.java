@@ -16,6 +16,6 @@ public class MainController {
 
         HttpHeaders headers = new HttpHeaders();
 
-        return new ResponseEntity("Success", headers, HttpStatus.OK);
+        return new ResponseEntity("Successfully", headers, HttpStatus.OK);
     }
 }
