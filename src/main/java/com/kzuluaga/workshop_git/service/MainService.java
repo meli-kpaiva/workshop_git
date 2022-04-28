@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 public class MainService {
     private final String NEW = "NEW";
     public boolean checkString(String value){
-        return value.equals(NEW);
+        return !value.isEmpty() && value.equals(NEW);
+    }
+    public String checkNamingConvention(String value){
+        return value;
     }
 }
