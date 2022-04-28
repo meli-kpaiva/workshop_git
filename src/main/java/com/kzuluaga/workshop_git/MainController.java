@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController {
 
     @GetMapping
-    public ResponseEntity<String> getMEssage(){
+    public ResponseEntity<String> getMessage(){
 
         HttpHeaders headers = new HttpHeaders();
 
@@ -27,7 +27,9 @@ public class MainController {
         return new ResponseEntity("Successfully", headers, HttpStatus.OK);
     }
 
-    public ResponseEntity<String> changeMessage(){
-
+    @PostMapping
+    public ResponseEntity<String> changeMessageByID(){
+        HttpHeaders headers = new HttpHeaders();
+        return new ResponseEntity("Successfully", headers, HttpStatus.OK);
     }
 }
