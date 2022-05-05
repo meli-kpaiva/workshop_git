@@ -66,4 +66,12 @@ public class MainController {
 
         return new ResponseEntity("Successfully", headers, HttpStatus.OK);
     }
+
+    @DeleteMapping
+    public ResponseEntity<String> deleteMessage2(){
+
+        HttpHeaders headers = new HttpHeaders();
+
+        return new ResponseEntity("Successfully", headers, HttpStatus.OK);
+    }
 }
